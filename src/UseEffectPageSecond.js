@@ -12,6 +12,12 @@ function UseEffectPageSecond() {
   useEffect(()=>{
     console.log('In UseEffectPageSecond Page useEffect()');
     window.addEventListener('resize',handleResize)//Need to add event listerner only once onMount
+
+    //Clean up activity using return function
+    return () => {
+      console.log('Cleaning event Listener');
+      window.removeEventListener('resize',handleResize)
+    }
   },[]) 
 
   return (<div>{windowWidth}</div>);
