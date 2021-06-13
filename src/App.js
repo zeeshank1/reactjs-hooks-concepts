@@ -4,6 +4,7 @@ import Home from "./Home";
 import useEffectPage from "./UseEffectPage";
 import useStatePage from "./UseStatePage";
 import Navbar from './Navbar'
+import ErrorPage from "./ErrorPage";
 
 //useEffect : side effect when a resource type changes
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" component={Home} exact />
           <Route path="/useStatePage" component={useStatePage} />
           <Route path="/useEffectPage" component={useEffectPage} />
+          <Route component={ErrorPage} />
         </Switch>
       </main>
     </>
