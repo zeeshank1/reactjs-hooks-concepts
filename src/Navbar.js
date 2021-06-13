@@ -8,6 +8,7 @@ function Navbar() {
         <Link style={{padding:"6px 6px 6px 6px"}} to="/">Home</Link>
         <Link style={{padding:"6px 6px 6px 6px"}} to="/useStatePage">UseState</Link>
         <Link style={{padding:"6px 6px 6px 6px"}} to="/useEffectPage">UseEffect</Link>
+        <Link style={{padding:"6px 6px 6px 6px"}} to="/useEffectPageSecond">UseEffectSecond</Link>
         <br />
       </div>
     </>
